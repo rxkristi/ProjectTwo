@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
-html {
+body {
   background-color: #44454a;
   font-family: 'Kanit', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper.seven {
