@@ -9,10 +9,6 @@ body {
   font-family: 'Kanit', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 .wrapper.seven {
   background-color: #44454a;
 }
@@ -84,6 +80,10 @@ a {
 }
 
 /* Disappearing code apated from https://techblog.geekyants.com/some-of-the-most-popular-css-text-animations */
+
+a {
+  text-decoration: none;
+}
 
 .wrapper.ten {
   background-color: #44454a;
