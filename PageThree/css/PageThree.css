@@ -19,8 +19,14 @@ html:hover {
 }
 
 a {
-    color:#a1a3ad;
+    color: rgb(11, 9, 86);
     text-decoration: none;
+    opacity : 0; 
+    transition: opacity 2s;
+}
+
+a:hover {
+    opacity : 1;
 }
 
 body { 
@@ -53,17 +59,6 @@ h1 {
 	100% {
 		opacity: 1;
 	}
-}
-
-a {
-    color: rgb(11, 9, 86);
-    text-decoration: none;
-    opacity : 0; 
-    transition: opacity 2s;
-}
-
-a:hover{
-    opacity : 1;
 }
 
 .split-text-container {
