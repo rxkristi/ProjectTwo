@@ -21,6 +21,30 @@ a {
     text-decoration: none
 }
 
+footer {
+  color: #44454a;
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  float: left;
+  padding-left: 3%;
+  padding-bottom: 95%;
+  opacity: 0;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
   .container{
     width: 100%;
     margin-left: auto;
