@@ -9,17 +9,6 @@ html {
     background-color: #44454a;
 }
 
-a {
-    color: rgb(11, 9, 86);
-    text-decoration: none;
-    opacity : 0; 
-    transition: opacity 2s;
-}
-
-a:hover {
-    opacity : 1;
-}
-
 body { 
 display: flex;
 justify-content: center;
@@ -37,7 +26,18 @@ body:hover {
     -ms-transition: background-color 3s linear;
     transition: background-color 3s linear;
     transition-timing-function: forwards;
-    transition-delay: .5s;
+    transition-delay: 1s;
+}
+
+a {
+    color: rgb(11, 9, 86);
+    text-decoration: none;
+    opacity : 0; 
+    transition: opacity 2s;
+}
+
+a:hover {
+    opacity : 1;
 }
 
 h1 {

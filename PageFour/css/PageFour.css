@@ -7,11 +7,13 @@
 body {
     background-color: #a1a3ad; 
     font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
 a {
-    color: #44454a;
+    color: #0d132c;
     text-decoration: none;
 }
 
@@ -24,28 +26,26 @@ a:hover {
 .drop-main {
     display: flex;
     margin: 1.5rem;
-    font-weight: 800;
-    font-size: 50px;
 }
 
 .d {
     opacity: 0;
     animation: drop 1s linear forwards .2s;
-    color: #44454a;
+    color: #6093c0;
 
 }
 .r {
     opacity: 0;
     animation: drop 1s linear forwards .2s;
     animation-delay: 1s;
-    color: #44454a;
+    color: #55789c;
     padding-left: 1%;
 }
 .o {
     opacity: 0;
     animation: drop 1s ease-out forwards .2s;
     animation-delay: 2s;
-    color: #44454a;
+    color: #46708f;
     padding-left: 3%;
     margin-top: 15%;
 }
@@ -53,7 +53,7 @@ a:hover {
     opacity: 0;
     animation: drop 1s ease-out forwards .2s;
     animation-delay: 3s;
-    color: #44454a;
+    color: #274565;
     padding-left: 3%;
     margin-top: 25%;
 }
@@ -62,7 +62,7 @@ a:hover {
     opacity: 0;
     animation: drop 1s ease-out forwards .2s;
     animation-delay: 4s;
-    color: #44454a;
+    color: #142e44;
     padding-left: 3%;
     margin-top: 35%;
 }
@@ -71,7 +71,7 @@ a:hover {
     opacity: 0;
     animation: drop 1s linear forwards .2s;
     animation-delay: 5s;
-    color: rgb(11, 9, 86);
+    color: #051933;
     padding-left: 2%;
     margin-top: 45%;
 }
