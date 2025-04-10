@@ -1,0 +1,136 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  background-color: #44454a;
+  font-family: 'Kanit', sans-serif;
+}
+
+.wrapper.seven {
+  background-color: #44454a;
+}
+.seven > div{
+  width: auto;
+  margin: 1rem auto;
+}
+.seven .text {
+  font-size: 6rem;
+  padding-left: 5%;
+  padding-top: 3%;
+  margin: 1rem auto;
+  color: #a1a3ad;
+}
+
+.wrapper.eight {
+  background-color: #44454a;
+}
+.eight > div{
+  width: auto;
+  margin: 1rem auto;
+}
+.eight .text {
+  font-size: 6rem;
+  padding-left: 35%;
+  padding-top: 5%;
+  color: #a1a3ad;
+}
+
+.wrapper.nine {
+  background-color: #44454a;
+}
+
+.nine > div{
+  width: auto;
+  margin: 1rem auto;
+}
+
+.nine .text {
+  font-size: 6rem;
+  padding-left: 50%;
+  padding-top: 7%;
+  color: #a1a3ad;
+}
+
+.seven span {
+  line-height: 0;
+  animation: disappear 3s 1s forwards;
+}
+
+.eight span {
+  line-height: 0;
+  animation: disappear 3s 2s forwards;
+}
+
+.nine span {
+  line-height: 0;
+  animation: disappear 3s 3s forwards;
+}
+
+@keyframes disappear {
+  50% {
+      text-shadow: 0 0 40px #cbc7c7;
+  }
+  to {
+      text-shadow: 0 0 20px #cbc7c7;
+      opacity: 0;
+  }
+}
+
+/* Disappearing code apated from https://techblog.geekyants.com/some-of-the-most-popular-css-text-animations */
+
+.wrapper.ten {
+  background-color: #44454a;
+  padding-left: 70%;
+  padding-bottom: 50%;
+}
+
+.bounce {
+  font-size: 5rem;
+  width: 100%;
+  margin: 3rem auto;
+  display: inline-flex;
+  justify-content: center;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
+}
+
+.bounce span {
+  display: inline-flex;
+  color: #a1a3ad;
+  font-family: "Kanit", sans-serif;
+  animation: bounce 1s;
+  animation-iteration-count: 6;
+}
+
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+      transform: translateY(0);
+  }
+  25% {
+      transform: translateY(-20px);
+  }
+}
+.ten span:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.ten span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.ten span:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.ten span:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+.ten span:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+.ten span:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+
+/* Bounce effect adapted from https://prismic.io/blog/css-text-animations */

@@ -1,0 +1,104 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #a1a3ad;
+}
+
+html:hover {
+    background-color: #44454a;
+    -webkit-transition: background-color 3s linear;
+    -ms-transition: background-color 3s linear;
+    transition: background-color 3s linear;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+}
+
+a {
+    text-decoration: none
+}
+
+  .container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20%;
+  }
+  
+  .container h1:nth-child(1) {
+    color: #44454a;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 0 0 0 25%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170px;
+    animation: type 2s steps(40,end) forwards;
+  }
+  
+  .container h1:nth-child(2) {
+    opacity: 0;
+    font-family: "Kanit", sans-serif;
+    margin: 0 auto auto auto;
+    background: linear-gradient(to right, #3a3b3f, #73757c, #a1a3ad);
+    font-weight: 800;
+    font-size: 100px;  
+    width: 430px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+  }
+  
+  @keyframes shring-animation {
+    0% {
+      background-position: 0 0;
+      opacity: 0;
+      width: 0;
+    }
+    1% {
+      background-position: 0 0;
+      opacity: 1;
+      border-right: 1px solid white;
+    }
+    50% {
+      background-position: 150px 0;
+      opacity: 1;
+      border-right: 1px solid white;
+    }
+    100% {
+      background-position: 400px 0;
+      opacity: 1;
+      border-right: 1px solid white;
+    }
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    1%, 99%{
+      border-right: 1px solid white;
+    }
+    100%{
+      border-right: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  /* code adapted from: https://prismic.io/blog/css-text-animations */
+  
+
+
